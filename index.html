@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 렌더 게이트: 매핑 전 placeholder/fallback 깜빡임 방지 (매핑 완료 시 페이드인) -->
+    <style>
+      html.tpl-loading body {
+        opacity: 0;
+      }
+      body {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+      }
+    </style>
+    <script>
+      document.documentElement.classList.add('tpl-loading');
+      window.__tplReveal = function () {
+        document.documentElement.classList.remove('tpl-loading');
+      };
+      setTimeout(function () {
+        window.__tplReveal && window.__tplReveal();
+      }, 3000);
+    </script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:type" content="website" />
+    <title data-page-title>경주 감포솔레 단체펜션 - 홈</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" type="text/css" href="styles/reset.css" />
+    <link rel="stylesheet" type="text/css" href="styles/theme.css" />
+    <link rel="stylesheet" type="text/css" href="styles/common.css" />
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="styles/popup.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- Open Graph Meta Tags for Social Media -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="경주 감포솔레 단체펜션 - 홈" />
+  <meta property="og:description" content="나정해수욕장 도보5분거리에 위치한 경주 감포솔레펜션입니다. 실내바베큐장,노래방 등 다양한 부대시설로 사랑하는 커플,가족들과 즐거운추억 만드세요" />
+  <meta property="og:image" content="https://bookingplay-media.s3.amazonaws.com/item_images/2026/01/09/h50RPKgrdseO.jpg" />
+  <meta property="og:url" content="https://saulaieps.kr" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="경주 감포솔레 단체펜션 - 홈" />
+  <meta name="twitter:description" content="나정해수욕장 도보5분거리에 위치한 경주 감포솔레펜션입니다. 실내바베큐장,노래방 등 다양한 부대시설로 사랑하는 커플,가족들과 즐거운추억 만드세요" />
+  <meta name="twitter:image" content="https://bookingplay-media.s3.amazonaws.com/item_images/2026/01/09/h50RPKgrdseO.jpg" />
+  <meta name="naver-site-verification" content="2c261b839773a814fd9a64909c4821f59acbec40" />
+  <meta name="google-site-verification" content="0tmwahEOKbxxX7CI531jxWHCwIuJRhm4sBjVQvX2XIg" />
+</head>
+
+  <body oncontextmenu="return false;" onselectstart="return false" ondragstart="return false;">
+    <div id="wrap">
+      <div id="header-wrap"></div>
+
+      <div id="container">
+        <div class="main_visual visual">
+          <div class="visual_box">
+            <div class="visual_txt">
+              <span>WELCOME TO</span>
+              <!-- data-* 속성 : data-property-name-en -->
+              <strong><b data-property-name-en></b></strong>
+              <div class="arw">
+                <div class="swiper-button-prev">
+                  <img src="images/left_btn.png" />
+                </div>
+                <div class="swiper-button-next">
+                  <img src="images/right_btn.png" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-container">
+              <!-- data-* 속성 : data-index-hero-slides | 동적 매핑 필요 -->
+              <div class="swiper-wrapper" data-index-hero-slides>
+                <!-- swiper-slide | 동적 매핑 필요 -->
+              </div>
+            </div>
+            <div class="scroll_down">
+              <img src="images/scroll_down.png" alt="scroll down" />
+            </div>
+          </div>
+        </div>
+        <section id="content" class="main">
+          <div class="main_room">
+            <div class="inner">
+              <div class="title_box">
+                <!-- data-* 속성 : data-property-name-en -->
+                <span class="logo_txt" data-property-name-en></span>
+                <h3>Rooms Preview</h3>
+                <!-- data-* 속성 : data-property-themes (property.propertyThemes # 태그) -->
+                <p data-property-themes></p>
+              </div>
+              <div class="room_list">
+                <div class="arw">
+                  <div class="swiper-button-prev">
+                    <img src="images/r_le.png" alt="prev" />
+                  </div>
+                  <div class="swiper-button-next">
+                    <img src="images/r_ri.png" alt="next" />
+                  </div>
+                </div>
+                <div class="swiper-container">
+                  <!-- data-* 속성 : data-index-room-slides | 동적 매핑 필요 -->
+                  <div class="swiper-wrapper" data-index-room-slides>
+                    <!-- swiper-slide | 동적 매핑 필요 -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="main_special">
+            <div class="title_box title_bg">
+              <!-- data-* 속성 : data-property-name-en -->
+              <span class="logo_txt" data-property-name-en></span>
+              <h3>Special For You</h3>
+              <!-- data-* 속성 : data-index-facility-tags (facility명에 # 붙여 동적 생성) -->
+              <p data-index-facility-tags></p>
+            </div>
+            <div class="special_list">
+              <div class="arw">
+                <div class="swiper-button-prev">
+                  <img src="images/spe_le.png" alt="prev" />
+                </div>
+                <div class="swiper-button-next">
+                  <img src="images/spe_ri.png" alt="next" />
+                </div>
+              </div>
+              <div class="swiper-container">
+                <!-- data-* 속성 : data-index-facility-slides | 동적 매핑 필요 -->
+                <div class="swiper-wrapper" data-index-facility-slides>
+                  <!-- swiper-slide | 동적 매핑 필요 -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="main_menu">
+            <div class="title_box inner">
+              <!-- data-* 속성 : data-property-name-en -->
+              <span class="logo_txt" data-property-name-en></span>
+              <h3>Welcome To Pension</h3>
+            </div>
+            <p class="menu_txt">
+              일상의 피로와 스트레스를 잊게 하는 편안한 곳,
+              <br />
+              <!-- data-* 속성 : data-property-name -->
+              <span data-property-name></span>
+              에서 즐거운 추억을 만들어보세요.
+            </p>
+            <ul class="menu_li inner">
+              <li>
+                <a href="./reservation.html"></a>
+                <div class="img">
+                  <!-- data-* 속성 : data-index-menu-image="reservation" -->
+                  <img data-index-menu-image="reservation" alt="" />
+                </div>
+                <div class="box">
+                  <div class="txt">
+                    <p>
+                      이용안내
+                      <br />
+                      Reserve
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="./main.html"></a>
+                <div class="img">
+                  <!-- data-* 속성 : data-index-menu-image="main" -->
+                  <img data-index-menu-image="main" alt="" />
+                </div>
+                <div class="box">
+                  <div class="txt">
+                    <p>
+                      펜션소개
+                      <br />
+                      About
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="./directions.html"></a>
+                <div class="img">
+                  <!-- data-* 속성 : data-index-menu-image="directions" -->
+                  <img data-index-menu-image="directions" alt="" />
+                </div>
+                <div class="box">
+                  <div class="txt">
+                    <p>
+                      오시는길
+                      <br />
+                      Location
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <div id="footer-wrap"></div>
+    </div>
+
+    <!-- 팝업 (homepage.customFields.popup.popups / enabled·표시기간 따라 노출, 미리보기 POPUP_UPDATE 연동) -->
+    <div id="popup-container"></div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/image-helpers.js"></script>
+    <script src="js/preview-handler.js"></script>
+    <script src="js/data-mapper/core/base-mapper.js"></script>
+    <script src="js/data-mapper/pages/header-footer-mapper.js"></script>
+    <script src="js/data-mapper/pages/index-mapper.js"></script>
+    <script src="js/header-footer-loader.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/popup.js"></script>
+  </body>
+</html>

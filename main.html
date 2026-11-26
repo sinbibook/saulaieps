@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 렌더 게이트: 매핑 전 placeholder/fallback 깜빡임 방지 (매핑 완료 시 페이드인) -->
+    <style>
+      html.tpl-loading body {
+        opacity: 0;
+      }
+      body {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+      }
+    </style>
+    <script>
+      document.documentElement.classList.add('tpl-loading');
+      window.__tplReveal = function () {
+        document.documentElement.classList.remove('tpl-loading');
+      };
+      setTimeout(function () {
+        window.__tplReveal && window.__tplReveal();
+      }, 3000);
+    </script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:type" content="website" />
+    <title data-page-title>경주 감포솔레 단체펜션 - 숙소소개</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" type="text/css" href="styles/reset.css" />
+    <link rel="stylesheet" type="text/css" href="styles/theme.css" />
+    <link rel="stylesheet" type="text/css" href="styles/common.css" />
+    <link rel="stylesheet" type="text/css" href="styles/sub.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- Open Graph Meta Tags for Social Media -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="경주 감포솔레 단체펜션 - 숙소소개" />
+  <meta property="og:description" content="나정해수욕장 도보5분거리에 위치한 경주 감포솔레펜션입니다. 실내바베큐장,노래방 등 다양한 부대시설로 사랑하는 커플,가족들과 즐거운추억 만드세요" />
+  <meta property="og:image" content="https://bookingplay-media.s3.amazonaws.com/item_images/2026/01/09/h50RPKgrdseO.jpg" />
+  <meta property="og:url" content="https://saulaieps.kr" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="경주 감포솔레 단체펜션 - 숙소소개" />
+  <meta name="twitter:description" content="나정해수욕장 도보5분거리에 위치한 경주 감포솔레펜션입니다. 실내바베큐장,노래방 등 다양한 부대시설로 사랑하는 커플,가족들과 즐거운추억 만드세요" />
+  <meta name="twitter:image" content="https://bookingplay-media.s3.amazonaws.com/item_images/2026/01/09/h50RPKgrdseO.jpg" />
+  <meta name="naver-site-verification" content="2c261b839773a814fd9a64909c4821f59acbec40" />
+  <meta name="google-site-verification" content="0tmwahEOKbxxX7CI531jxWHCwIuJRhm4sBjVQvX2XIg" />
+</head>
+
+  <body oncontextmenu="return false;" onselectstart="return false" ondragstart="return false;">
+    <div id="wrap">
+      <div id="header-wrap"></div>
+
+      <div id="container">
+        <section id="content" class="sub1_2 sub_about">
+          <!-- 히어로 = 원본 view.html(외부풍경) 슬라이더. 단일 배경이 아니다.
+               .visual 클래스가 있어야 common.js 의 공용 swiper 초기화가 잡는다 -->
+          <div class="sub_wide_visual visual">
+            <div class="visual_box">
+              <!-- 원본 view.html .visual_txt 와 같은 순서다 (span → strong → p).
+                   CSS 가 이 순서를 전제로 잡혀 있어 바꾸면 레이아웃이 깨진다 -->
+              <div class="visual_txt">
+                <!-- data-* 속성 : data-property-name-en -->
+                <span data-property-name-en></span>
+                <!-- 페이지 라벨 : 정적 (매핑 안 함) -->
+                <strong>ABOUT</strong>
+                <!-- data-* 속성 : data-property-name (타 서브페이지와 동일 패턴) -->
+                <p>
+                  <span data-property-name></span>
+                  , 펜션소개
+                </p>
+                <div class="arw">
+                  <div class="swiper-button-prev">
+                    <img src="images/left_btn.png" />
+                  </div>
+                  <div class="swiper-button-next">
+                    <img src="images/right_btn.png" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-container">
+                <!-- data-* 속성 : data-main-hero-slides | 동적 매핑 필요
+                     pages.main.sections[0].hero.images (원본 view.html 히어로 전부) -->
+                <div class="swiper-wrapper" data-main-hero-slides>
+                  <!-- swiper-slide | 동적 매핑 필요 -->
+                </div>
+              </div>
+              <div class="scroll_down">
+                <img src="images/scroll_down.png" alt="scroll down" />
+              </div>
+            </div>
+          </div>
+          <div class="sub_cate_wrap">
+            <div class="sub_inner">
+              <ul>
+                <li class="on"><a href="./main.html">펜션소개</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="sub_cont">
+            <div class="inner">
+              <div class="title_box">
+                <!-- data-* 속성 : data-property-name-en -->
+                <span class="logo_txt" data-property-name-en></span>
+                <!-- data-* 속성 : data-main-hero-title (pages.main.sections[0].hero.title) -->
+                <h3 data-main-hero-title></h3>
+              </div>
+              <!-- data-* 속성 : data-main-hero-description (hero.description) -->
+              <p class="about_txt" data-main-hero-description></p>
+            </div>
+            <div class="about_img">
+              <!-- data-* 속성 : data-main-hero-images | 동적 매핑 필요
+                   원본 view.html 히어로 슬라이더 이미지 전부 (개수 제한 없음) -->
+              <ul class="inner" data-main-hero-images>
+                <!-- li | 동적 매핑 필요 -->
+              </ul>
+            </div>
+            <!-- data-* 속성 : data-main-about-bnr | 동적 매핑 필요
+                 main.about[0..] 각 블록당 li 1개 (교차 레이아웃). li 내부 strong=about[i].title / p=about[i].description -->
+            <ul class="about_bnr" data-main-about-bnr>
+              <!-- li | 동적 매핑 필요 -->
+            </ul>
+            <!-- data-* 속성 : data-main-closing-bg (index.closing.images[isSelected][0] 배경) -->
+            <div class="about_wide_bnr" data-main-closing-bg>
+              <div>
+                <!-- data-* 속성 : data-main-closing-title -->
+                <strong data-main-closing-title></strong>
+                <!-- data-* 속성 : data-main-closing-description -->
+                <p data-main-closing-description></p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div id="footer-wrap"></div>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/image-helpers.js"></script>
+    <script src="js/preview-handler.js"></script>
+    <script src="js/data-mapper/core/base-mapper.js"></script>
+    <script src="js/data-mapper/pages/header-footer-mapper.js"></script>
+    <script src="js/data-mapper/pages/main-mapper.js"></script>
+    <script src="js/header-footer-loader.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>

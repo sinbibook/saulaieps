@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* Theme CSS - 폰트 및 색상 변수 정의 */
+/* 이 파일만 수정하면 전체 테마 변경 가능 */
+
+/* Font Imports (모든 폰트 import는 이 파일에 통합) */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Nunito:wght@400;600&display=swap');
+
+/* CSS Variables */
+:root {
+  /* 색상 (primary: 포인트 색, secondary: 네이비/브랜드) */
+  --color-primary: #ffbc00;
+  --color-secondary: #30353e;
+
+  /* 한글 폰트 */
+  --font-ko-main: 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  --font-ko-sub: 'Pretendard', sans-serif;
+
+  /* 영문 폰트 */
+  --font-en-main: 'Nunito', sans-serif;
+}

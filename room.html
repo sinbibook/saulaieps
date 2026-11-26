@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 렌더 게이트: 매핑 전 placeholder/fallback 깜빡임 방지 (매핑 완료 시 페이드인) -->
+    <style>
+      html.tpl-loading body {
+        opacity: 0;
+      }
+      body {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+      }
+    </style>
+    <script>
+      document.documentElement.classList.add('tpl-loading');
+      window.__tplReveal = function () {
+        document.documentElement.classList.remove('tpl-loading');
+      };
+      setTimeout(function () {
+        window.__tplReveal && window.__tplReveal();
+      }, 3000);
+    </script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:type" content="website" />
+    <title data-page-title>경주 감포솔레 단체펜션 - 객실안내</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" type="text/css" href="styles/reset.css" />
+    <link rel="stylesheet" type="text/css" href="styles/theme.css" />
+    <link rel="stylesheet" type="text/css" href="styles/common.css" />
+    <link rel="stylesheet" type="text/css" href="styles/sub.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- Open Graph Meta Tags for Social Media -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="경주 감포솔레 단체펜션 - 객실안내" />
+  <meta property="og:description" content="나정해수욕장 도보5분거리에 위치한 경주 감포솔레펜션입니다. 실내바베큐장,노래방 등 다양한 부대시설로 사랑하는 커플,가족들과 즐거운추억 만드세요" />
+  <meta property="og:image" content="https://bookingplay-media.s3.amazonaws.com/item_images/2026/01/09/h50RPKgrdseO.jpg" />
+  <meta property="og:url" content="https://saulaieps.kr" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="경주 감포솔레 단체펜션 - 객실안내" />
+  <meta name="twitter:description" content="나정해수욕장 도보5분거리에 위치한 경주 감포솔레펜션입니다. 실내바베큐장,노래방 등 다양한 부대시설로 사랑하는 커플,가족들과 즐거운추억 만드세요" />
+  <meta name="twitter:image" content="https://bookingplay-media.s3.amazonaws.com/item_images/2026/01/09/h50RPKgrdseO.jpg" />
+  <meta name="naver-site-verification" content="2c261b839773a814fd9a64909c4821f59acbec40" />
+  <meta name="google-site-verification" content="0tmwahEOKbxxX7CI531jxWHCwIuJRhm4sBjVQvX2XIg" />
+</head>
+
+  <body oncontextmenu="return false;" onselectstart="return false" ondragstart="return false;">
+    <div id="wrap">
+      <div id="header-wrap"></div>
+
+      <div id="container">
+        <section id="content" class="sub2_2 sub_room sub_room_detail">
+          <div class="sub_wide_visual visual">
+            <div class="visual_box">
+              <div class="visual_txt">
+                <!-- data-* 속성 : data-property-name-en -->
+                <span data-property-name-en></span>
+                <!-- data-* 속성 : data-room-name -->
+                <strong class="ff_notokr" data-room-name></strong>
+                <!-- data-* 속성 : data-room-structure -->
+                <p data-room-structure></p>
+                <div class="arw">
+                  <div class="swiper-button-prev">
+                    <img src="images/left_btn.png" />
+                  </div>
+                  <div class="swiper-button-next">
+                    <img src="images/right_btn.png" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-container">
+                <!-- data-* 속성 : data-room-hero-slides | 동적 매핑 필요 (roomtypes[current] interior) -->
+                <div class="swiper-wrapper" data-room-hero-slides>
+                  <!-- swiper-slide | 동적 매핑 필요 -->
+                </div>
+              </div>
+              <div class="scroll_down">
+                <img src="images/scroll_down.png" alt="scroll down" />
+              </div>
+            </div>
+          </div>
+          <div class="sub_cate_wrap">
+            <div class="sub_inner">
+              <!-- data-* 속성 : data-room-list-nav | 동적 매핑 필요 -->
+              <ul data-room-list-nav>
+                <!-- 첫 번째 li(미리보기) 정적, 이후 li 동적 매핑 (현재 객실 on) -->
+                <li class=""><a href="./layout-map.html">미리보기</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="sub_cont">
+            <div class="title_box">
+              <!-- data-* 속성 : data-property-name-en -->
+              <span class="logo_txt" data-property-name-en></span>
+              <h3>Room's Info</h3>
+            </div>
+            <div class="table_box inner">
+              <div class="price_table for_pc">
+                <table cellspacing="0" cellpadding="0" class="table_default">
+                  <thead>
+                    <tr>
+                      <th style="width: 20%">객실명</th>
+                      <th style="width: 5%">기준</th>
+                      <th style="width: 5%">최대</th>
+                      <th style="width: 15%">유형</th>
+                      <th style="width: 15%">평형</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <!-- data-* 속성 : data-room-name -->
+                      <td data-room-name></td>
+                      <!-- data-* 속성 : data-room-base-occupancy -->
+                      <td data-room-base-occupancy></td>
+                      <!-- data-* 속성 : data-room-max-occupancy -->
+                      <td data-room-max-occupancy></td>
+                      <!-- data-* 속성 : data-room-structure -->
+                      <td data-room-structure></td>
+                      <!-- data-* 속성 : data-room-size-pyeong (rooms[j].size 평형) -->
+                      <td data-room-size-pyeong></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <ul class="table_text">
+                  <li>
+                    <strong>집기품목</strong>
+                    <!-- data-* 속성 : data-room-amenities -->
+                    :
+                    <span data-room-amenities></span>
+                  </li>
+                </ul>
+              </div>
+              <div class="price_table for_m">
+                <table class="table_default">
+                  <thead>
+                    <tr>
+                      <th colspan="4">객실명</th>
+                      <th>기준</th>
+                      <th>최대</th>
+                      <th colspan="4">유형</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <!-- data-* 속성 : data-room-name -->
+                      <td colspan="4"><span data-room-name></span></td>
+                      <!-- data-* 속성 : data-room-base-occupancy -->
+                      <td data-room-base-occupancy></td>
+                      <!-- data-* 속성 : data-room-max-occupancy -->
+                      <td data-room-max-occupancy></td>
+                      <!-- data-* 속성 : data-room-structure -->
+                      <td colspan="4" data-room-structure></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <ul class="table_text">
+                  <li>
+                    <strong>집기품목</strong>
+                    <!-- data-* 속성 : data-room-amenities -->
+                    :
+                    <span data-room-amenities></span>
+                  </li>
+                </ul>
+              </div>
+              <div class="btn_wrap">
+                <!-- data-* 속성 : data-booking-url | href = property.realtimeBookingId (전체 URL) -->
+                <a href="#!" target="_blank" class="btn_reserve" data-booking-url>예약하기</a>
+              </div>
+            </div>
+
+            <div class="room_img_box">
+              <div class="title_box">
+                <h3>Room's Detail</h3>
+              </div>
+              <!-- data-* 속성 : data-room-bnr | 동적 매핑 필요 (roomtypes[current] interior, 교차 레이아웃) -->
+              <!-- li 내부: strong = roomtypes[current].nameEn, p = image.description -->
+              <ul class="sub_img_bnr" data-room-bnr>
+                <!-- li | 동적 매핑 필요 -->
+              </ul>
+              <!-- data-* 속성 : data-room-wide-bnr (roomtypes[current] thumbnail 대표 이미지) -->
+              <div class="sub_wide_bnr" data-room-wide-bnr></div>
+            </div>
+
+            <!-- s: 객실 평면도 — 원본 객실 상세의 평면도 영역 크롤링 이미지가 있을 때만 노출 -->
+            <div class="room_floorplan" data-room-floorplan-section>
+              <div class="inner">
+                <div class="title_box">
+                  <h3>객실 평면도</h3>
+                </div>
+                <div class="floorplan_img">
+                  <!-- data-* 속성 : data-room-floorplan-image
+                       roomtypes[current] 평면도 크롤링 이미지 → 없으면 섹션 미노출 -->
+                  <img src="data:," alt="객실 평면도" data-room-floorplan-image />
+                </div>
+              </div>
+            </div>
+            <!--// 객실 평면도 -->
+
+            <div class="main_room">
+              <div class="inner">
+                <div class="title_box">
+                  <!-- data-* 속성 : data-property-name-en -->
+                  <span class="logo_txt" data-property-name-en></span>
+                  <h3>Rooms Preview</h3>
+                  <!-- data-* 속성 : data-property-themes (property.propertyThemes # 태그) -->
+                  <p data-property-themes></p>
+                </div>
+                <div class="room_list">
+                  <div class="arw">
+                    <div class="swiper-button-prev">
+                      <img src="images/r_le.png" alt="prev" />
+                    </div>
+                    <div class="swiper-button-next">
+                      <img src="images/r_ri.png" alt="next" />
+                    </div>
+                  </div>
+                  <div class="swiper-container">
+                    <!-- data-* 속성 : data-room-list-slides | 동적 매핑 필요 -->
+                    <div class="swiper-wrapper" data-room-list-slides>
+                      <!-- swiper-slide | 동적 매핑 필요 -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div id="footer-wrap"></div>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/image-helpers.js"></script>
+    <script src="js/preview-handler.js"></script>
+    <script src="js/data-mapper/core/base-mapper.js"></script>
+    <script src="js/data-mapper/pages/header-footer-mapper.js"></script>
+    <script src="js/data-mapper/pages/room-mapper.js"></script>
+    <script src="js/header-footer-loader.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>

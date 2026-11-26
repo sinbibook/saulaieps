@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 렌더 게이트: 매핑 전 placeholder/fallback 깜빡임 방지 (매핑 완료 시 페이드인) -->
+    <style>
+      html.tpl-loading body {
+        opacity: 0;
+      }
+      body {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+      }
+    </style>
+    <script>
+      document.documentElement.classList.add('tpl-loading');
+      window.__tplReveal = function () {
+        document.documentElement.classList.remove('tpl-loading');
+      };
+      setTimeout(function () {
+        window.__tplReveal && window.__tplReveal();
+      }, 3000);
+    </script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:type" content="website" />
+    <title data-page-title>경주 감포솔레 단체펜션</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" type="text/css" href="styles/reset.css" />
+    <link rel="stylesheet" type="text/css" href="styles/theme.css" />
+    <link rel="stylesheet" type="text/css" href="styles/common.css" />
+    <link rel="stylesheet" type="text/css" href="styles/sub.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- Open Graph Meta Tags for Social Media -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="경주 감포솔레 단체펜션" />
+  <meta property="og:description" content="나정해수욕장 도보5분거리에 위치한 경주 감포솔레펜션입니다. 실내바베큐장,노래방 등 다양한 부대시설로 사랑하는 커플,가족들과 즐거운추억 만드세요" />
+  <meta property="og:image" content="https://bookingplay-media.s3.amazonaws.com/item_images/2026/01/09/h50RPKgrdseO.jpg" />
+  <meta property="og:url" content="https://saulaieps.kr" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="경주 감포솔레 단체펜션" />
+  <meta name="twitter:description" content="나정해수욕장 도보5분거리에 위치한 경주 감포솔레펜션입니다. 실내바베큐장,노래방 등 다양한 부대시설로 사랑하는 커플,가족들과 즐거운추억 만드세요" />
+  <meta name="twitter:image" content="https://bookingplay-media.s3.amazonaws.com/item_images/2026/01/09/h50RPKgrdseO.jpg" />
+  <meta name="naver-site-verification" content="2c261b839773a814fd9a64909c4821f59acbec40" />
+  <meta name="google-site-verification" content="0tmwahEOKbxxX7CI531jxWHCwIuJRhm4sBjVQvX2XIg" />
+</head>
+
+  <body oncontextmenu="return false;" onselectstart="return false" ondragstart="return false;">
+    <div id="wrap">
+      <div id="header-wrap"></div>
+
+      <div id="container">
+        <section id="content" class="sub2_1 sub_room">
+          <!-- data-* 속성 : data-layout-map-hero-bg (pages.layoutMap.sections[0].hero.images[isSelected][0].url) -->
+          <div class="sub_visual" data-layout-map-hero-bg>
+            <div class="txt_box">
+              <h3>ROOM</h3>
+              <!-- data-* 속성 : data-property-name -->
+              <p>
+                <span data-property-name></span>
+                , 객실 미리보기
+              </p>
+            </div>
+          </div>
+          <div class="sub_cate_wrap">
+            <div class="sub_inner">
+              <!-- data-* 속성 : data-room-list-nav | 동적 매핑 필요 -->
+              <ul data-room-list-nav>
+                <!-- 첫 번째 li(미리보기) 정적, 이후 li 동적 매핑 필요 -->
+                <li class="on"><a href="./layout-map.html">미리보기</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="sub_cont">
+            <div class="main_room">
+              <div class="inner">
+                <div class="title_box">
+                  <!-- data-* 속성 : data-property-name-en -->
+                  <span class="logo_txt" data-property-name-en></span>
+                  <h3>Rooms Preview</h3>
+                  <!-- data-* 속성 : data-property-themes (property.propertyThemes # 태그) -->
+                  <p data-property-themes></p>
+                </div>
+                <div class="room_list">
+                  <div class="arw">
+                    <div class="swiper-button-prev">
+                      <img src="images/r_le.png" alt="prev" />
+                    </div>
+                    <div class="swiper-button-next">
+                      <img src="images/r_ri.png" alt="next" />
+                    </div>
+                  </div>
+                  <div class="swiper-container">
+                    <!-- data-* 속성 : data-room-list-slides | 동적 매핑 필요 -->
+                    <div class="swiper-wrapper" data-room-list-slides>
+                      <!-- swiper-slide | 동적 매핑 필요 -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- data-* 속성 : data-layout-map-image (pages.layoutMap.sections[0].about.images[isSelected][0].url / 배치도·외경) -->
+            <div class="wide_img inner">
+              <img data-layout-map-image alt="숙소 외경 이미지" />
+            </div>
+          </div>
+        </section>
+      </div>
+      <div id="footer-wrap"></div>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/image-helpers.js"></script>
+    <script src="js/preview-handler.js"></script>
+    <script src="js/data-mapper/core/base-mapper.js"></script>
+    <script src="js/data-mapper/pages/header-footer-mapper.js"></script>
+    <script src="js/data-mapper/pages/layout-map-mapper.js"></script>
+    <script src="js/header-footer-loader.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>

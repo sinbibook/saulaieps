@@ -1,0 +1,62 @@
+<div class="footer_wrap">
+  <div class="footer">
+    <!-- data-* 속성 : data-footer-rural-stay-mark-wrap (customFields.footer.ruralStayMarks 또는 기존 ruralStayMark 가 있을 때만 노출, 기본 숨김)
+         data-footer-rural-stay-mark : 농어촌민박사업자 이미지 (표시마크 + 신고번호, alt = description) -->
+    <div class="ft_rural_stay_mark_wrap" data-footer-rural-stay-mark-wrap style="display: none">
+      <img class="ft_rural_stay_mark" src="" alt="농어촌민박사업자" data-footer-rural-stay-mark />
+      <img class="ft_rural_stay_mark" src="" alt="농어촌민박사업자" data-footer-rural-stay-mark />
+    </div>
+    <!-- data-* 속성 : data-footer-phone (번호 텍스트) / data-footer-phone-link (tel: 링크)
+         소스: property.contactPhone (string[]). 번호가 여러 개면 이 링크를 개수만큼 복제해 " | " 로 구분 노출 -->
+    <div class="tel">
+      <a href="tel:" data-footer-phone-link>
+        T.
+        <span data-footer-phone>070-0000-0000</span>
+      </a>
+    </div>
+    <div class="address">
+      <!-- data-* 속성 : data-footer-address (property.businessInfo.businessAddress) -->
+      <p data-footer-address>경북 경주시 감포읍 동해안로 1993-14</p>
+      <!-- data-* 속성 : data-footer-business-name (property.businessInfo.businessName) -->
+      <p>
+        업체명 :
+        <span data-footer-business-name>경주 감포솔레 단체펜션</span>
+      </p>
+      <br class="for_m" />
+      <!-- data-* 속성 : data-footer-representative (property.businessInfo.representativeName) -->
+      <p>
+        대표자 :
+        <span data-footer-representative>김경숙</span>
+      </p>
+      <!-- data-* 속성 : data-footer-business-number (property.businessInfo.businessNumber) -->
+      <p>
+        사업자번호 :
+        <span data-footer-business-number>666-21-01032</span>
+      </p>
+      <!-- 개인정보처리방침 : 다른 템플릿과 동일한 트립일레븐 공통 약관 링크 -->
+      <a href="http://design.trip11.net/privacy/privacy_policy.html" class="privacy" target="_blank" rel="noopener noreferrer">개인정보처리방침</a>
+      <!-- data-* 속성 : data-ybs-button (property.ybsId) -->
+      <a href="#" class="privacy" target="_blank" rel="noopener noreferrer" data-calendar-wrap data-calendar-link style="display: none">실시간 달력</a>
+      <a href="#!" class="privacy" target="_blank" data-ybs-button>야놀자 YBS</a>
+    </div>
+  </div>
+  <p class="copy" data-copyright="COPYRIGHT©{provider}. ALL RIGHTS RESERVED.">COPYRIGHT©트립일레븐. ALL RIGHTS RESERVED.</p>
+</div>
+<!-- 우측 하단 플로팅 버튼 2개. 상담하기(아래) + 예약하기(위) 순으로 쌓인다.
+     예약하기는 `for_m` 이라 모바일에서만 뜨고, 상담하기는 총판A + tripPropertyId 가
+     있을 때 전 화면폭에서 뜬다 (header-footer-mapper.mapConsult). -->
+
+<!-- data-* 속성 : data-consult-button (property.tripPropertyId + partnerType)
+     상담 URL 은 `https://www.bookingplay.co.kr/api/cti_eicn/kakao_happy_talk?tid={tripPropertyId}` -->
+<div id="talk_custom_button" data-consult-wrap>
+  <a title="상담하기" href="#!" target="_blank" data-consult-button>
+    <img src="images/consult.png" alt="상담하기" />
+  </a>
+</div>
+
+<!-- data-* 속성 : data-booking-link (property.realtimeBookingId) -->
+<div class="ft_btn_reserve for_m on">
+  <a title="예약하기" href="#!" target="_blank" data-booking-link>
+    <img src="images/talk.png" alt="예약하기" />
+  </a>
+</div>
